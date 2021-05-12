@@ -1,32 +1,30 @@
 print('pilih unit:')
-units = ['pedang','tombak', 'pemanah', 'kuda', 'pengepung' ]
-print(f'1   :  {units[0]}')
-print(f'2   :  {units[1]}')
-print(f'3   :  {units[2]}')
-print(f'4   :  {units[3]}')
-print(f'5   :  {units[4]}')
+units = ['1. pedang','2. tombak', '3. pemanah', '4. kuda', '5. pengepung' ]
+for menu in units:
+    print(menu)
 
 pilih_unit = input('masukan angka pilihan: ')
 
-
+def print_hasil():
+    print(f'makanan          : {makanan}M')
+    print(f'kayu             : {kayu}M')
+    print(f'batu             : {batu}M')
+    print(f'besi             : {besi}M')
+    print(f'perak            : {perak}M')
+    print(f'kekuatan         : {kekuatan}M')
+    print(f'skor ajang       : {skor}M')
 if pilih_unit == '1':
     print(' masukan jumlah pedang dalam M: ')
-    pedang = int( input() )
-    if pedang >= 1 :
-        makanan = pedang * 590
-        besi = pedang * 1006
-        batu= pedang * 0
-        kayu = pedang * 160
-        perak = pedang * 45
-        kekuatan = pedang * 25
-        skor = pedang * 5 
-        print(f'makanan          : {makanan}M')
-        print(f'kayu             : {kayu}M')
-        print(f'batu             : {batu}M')
-        print(f'besi             : {besi}M')
-        print(f'perak            : {perak}M')
-        print(f'kekuatan         : {kekuatan}M')
-        print(f'skor ajang       : {skor}M')
+    unit = int( input() )
+    makanan = unit * 590
+    besi = Unit * 1006
+    batu= unit * 0
+    kayu = unit * 160
+    perak = unit * 45
+    kekuatan = unit * 25
+    skor = unit * 5 
+    print_hasil()
+
 elif pilih_unit == '2':
     print(' masukan jumlah tombak dalam M: ')
     unit = int( input() )
@@ -37,13 +35,7 @@ elif pilih_unit == '2':
     perak = unit * 60
     kekuatan = unit* 25
     skor = unit * 5 
-    print(f'makanan          : {makanan}M')
-    print(f'kayu             : {kayu}M')
-    print(f'batu             : {batu}M')
-    print(f'besi             : {besi}M')
-    print(f'perak            : {perak}M')
-    print(f'kekuatan         : {kekuatan}M')
-    print(f'skor ajang       : {skor}M')
+    print_hasil()
 elif pilih_unit == '3':
     print(' masukan jumlah pemanah dalam M: ')
     unit = int( input() )
@@ -54,13 +46,8 @@ elif pilih_unit == '3':
     perak = unit * 30
     kekuatan = unit* 45
     skor = unit * 5 
-    print(f'makanan          : {makanan}M')
-    print(f'kayu             : {kayu}M')
-    print(f'batu             : {batu}M')
-    print(f'besi             : {besi}M')
-    print(f'perak            : {perak}M')
-    print(f'kekuatan         : {kekuatan}M')
-    print(f'skor ajang       : {skor}M')
+    print_hasil()
+    
 elif pilih_unit == '4':
     print('masukan jumlah kuda dalam M: ')
     kuda = int( input() )
@@ -71,13 +58,7 @@ elif pilih_unit == '4':
     perak = kuda * 60
     kekuatan = kuda * 25
     skor = kuda * 5 
-    print(f'makanan          : {makanan}M')
-    print(f'kayu             : {kayu}M')
-    print(f'batu             : {batu}M')
-    print(f'besi             : {besi}M')
-    print(f'perak            : {perak}M')
-    print(f'kekuatan         : {kekuatan}M')
-    print(f'skor ajang       : {skor}M')
+    print_hasil()
 elif pilih_unit == '5':
     print(' masukan jumlah pengepung dalam M: ')
     unit = int( input() )
@@ -88,12 +69,6 @@ elif pilih_unit == '5':
     perak = unit * 50
     kekuatan = unit* 55
     skor = unit * 5 
-    print(f'makanan          : {makanan}M')
-    print(f'kayu             : {kayu}M')
-    print(f'batu             : {batu}M')
-    print(f'besi             : {besi}M')
-    print(f'perak            : {perak}M')
-    print(f'kekuatan         : {kekuatan}M')
-    print(f'skor ajang       : {skor}M')
+    print_hasil()
 else:
-    print('goblok')
+    print('masukan yang anda berikan tidak sesuai harapan')
